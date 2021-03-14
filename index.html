@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+</head>		
+<body>
+	<form autocomplete="off" action="submit_page.html" >
+		<h1><u>Registration Form</u></h1>
+		<label for="fname" >Fast Name(*)</label><br>
+		<input type="text" name="fname" id="fname" placeholder="Fast Name" required  ><br><br>
+		
+		<label for="lname">Last Name(*)</label><br>
+		<input type="text" name="lname" id="lname" placeholder="Last Name" required ><br><br>
+		
+		<label for="email">Enter Your Email(*)</label><br>
+		<input type="email" name="email" id="email" placeholder="Enter Email" required ><br><br>
+		
+		<label for="password" >Enter Your Password(*)</label><br>
+		<input type="password" name="password" id="password" placeholder="Password" required ><br><br>
+		
+		<label for="phone" >Enter Your Namver(*)</label><br>
+		<input type="tel" name="phone" id="phone" placeholder="Phone" required ><br><br>
+		
+		<label for="bday">Birthday</label><br>
+		<input type="date" name="bday" id="bday" ><br><br>
+		
+		<label for="country" >Select Your Country(*)</label><br>
+		<select name="conuntry" id="country" >
+			<option value="#">Select Country</option>
+			<option value="bangladash" >Bangladash</option>
+			<option value="india" >India</option>
+			<option value="pakistan" >Pakistan</option>
+			<option value="nepal" >Nepal</option>
+			<option value="saudi_arabia" >Saudi Arabia</option>
+		</select><br><br>
+		
+		<strong>Please Select Your Gender </strong><br>
+		<input type="radio" value="male" name="gender" id="male" required >
+		<label for="male" >Male</label>	
+		<input type="radio" value="female" name="gender" id="female" required >
+		<label for="female" >Female</label>
+		<input type="radio" value="other" name="gender" id="other" required >
+		<label for="other" >Other</label><br><br>
+		
+		<label for="comments" >Please Give Your Comments</label><br>
+		<textarea name="comments" id="comments" rows="8" cols="25" placeholder="Write Here" ></textarea>
+		<br><br><br>
+		<input type="submit" name="submit" value="Submit" >
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" name="reset" value="Reset" >
+	</form>
+</body>
+</html>
